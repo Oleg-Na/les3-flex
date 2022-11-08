@@ -106,6 +106,8 @@ ul {
 
 .hero {
     background-color: var(--backround-dark);
+    text-align: center;
+    padding: 200px;
 }
 
 .hero-text {
@@ -114,25 +116,28 @@ ul {
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--second-color);
 }
 
 .hero-button {
+    padding: 10px 32px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    line-height: 30px;    
     letter-spacing: 0.06em;
     color: var(--second-color);
     background-color: var(--accent-color);       
 }
+
+.hero-button:hover {
+    cursor: pointer;    
+    }     
 
 /* Преймущества */
 
