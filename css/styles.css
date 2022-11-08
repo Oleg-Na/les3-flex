@@ -11,6 +11,16 @@
 
 /* main config */
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color:#FFFFFF;
@@ -22,7 +32,7 @@ ul {
 }
 
 .main-head a {
-    text-decoration: none;
+    text-decoration: none;    
 }
 
 .basement a {
@@ -268,3 +278,5 @@ ul {
     letter-spacing: 0.03em;
     color: var(--text-color);
 }
+
+/* container */
