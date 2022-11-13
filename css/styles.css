@@ -39,33 +39,31 @@ ul {
     text-decoration: none;
 }
 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 /* logo */
 
 .logo-head {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    margin-top: 24px;
+    margin-bottom: 25px;
     margin-right: 93px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
-    letter-spacing: 0.03em;
     color: var(--main-color);
 }
 
 .logo-web {
     color: var(--accent-color);
-}
-
-.logo-foot {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    color: var(--second-color);
 }
 
 /* Основная навигация */
@@ -110,6 +108,7 @@ ul {
     background-color: var(--backround-dark);
     text-align: center;
     padding: 200px;
+    margin-bottom: 94px;
 }
 
 .hero-text {
@@ -144,6 +143,7 @@ ul {
 /* Преймущества */
 
 .advantage-head {
+    margin-bottom: 10px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -154,7 +154,28 @@ ul {
     color: var(--main-color);
 }
 
+.advantages {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 94px;
+}
+
+.advantages-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.advantages-list li {
+    width: 270px;
+}
+
+.advantages-list li + li {
+    margin-left: 30px;
+}
+
 .advantages-list p {
+    margin: 0;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -167,6 +188,7 @@ ul {
 /* Чем мы занимаемся */
 
 .whatwedo-head {
+    margin-bottom: 50px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -175,11 +197,33 @@ ul {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-color);
+}
+
+.whatwedo-list {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.whatwedo-list li + li {
+    margin-left: 30px;
+}
+
+.whatwedo {
+    padding-bottom: 94px;
 }
 
 /* Наша команда */
 
+.our-team {
+    background-color: var(--backround-light);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .our-team-head {
+    margin-bottom: 50px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -190,7 +234,20 @@ ul {
     color: var(--main-color);
 }
 
+.our-team-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.our-team-list li + li {
+    margin-left: 30px;
+}
+
 .team-name {
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -202,6 +259,7 @@ ul {
 }
 
 .prof {
+    margin-bottom: 30px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -212,13 +270,33 @@ ul {
     color: var(--text-color);
 }
 
+.our-team-list li {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.our-team-list img {
+    border-radius: 0px;
+}
+
+
+
 /* Подвал */
 
 .basement {
     background-color: var(--backround-dark);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.basement ul {
+    padding: 0;
+    margin: 0;
 }
 
 .company-address {
+    margin-top: 20px;
+    margin-bottom: 9px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -241,6 +319,28 @@ ul {
 .contact-list-foot:hover,
 .contact-list-foot:focus {
     color: var(--accent-color);
+}
+
+.basement li:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.foot-cont {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 1170px;
+}
+
+.logo-foot {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--second-color);
+    margin-bottom: 20px;
 }
 
 /* Портфолио */
@@ -293,7 +393,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     text-align: left;
-    width: 1200px;
+    width: 1170px;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
