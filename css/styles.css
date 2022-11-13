@@ -158,6 +158,8 @@ p {
     display: flex;
     justify-content: center;
     margin-bottom: 94px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .advantages-list {
@@ -212,6 +214,8 @@ p {
 
 .whatwedo {
     padding-bottom: 94px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 /* Наша команда */
@@ -220,6 +224,8 @@ p {
     background-color: var(--backround-light);
     padding-top: 94px;
     padding-bottom: 94px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .our-team-head {
@@ -346,6 +352,25 @@ p {
 /* Портфолио */
 /* Фильтры */
 
+.filters {
+    margin-top: 94px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.filter-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.filter-list li + li {
+    margin-left: 8px;
+}
+
+
+
 .port-button {
     font-family: 'Roboto';
     font-style: normal;
@@ -356,6 +381,9 @@ p {
     letter-spacing: 0.03em;
     color: var(--main-color);
     background-color: var(--button-color);
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: 0px;
 }
 
 .port-button:hover,
